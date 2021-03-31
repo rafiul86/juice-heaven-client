@@ -10,7 +10,7 @@ const Admin = () => {
       price : data.price,
       imageURL : imageURL
     }
-    const url = `http://localhost:5501/addProduct`
+    const url = `https://peaceful-crag-13613.herokuapp.com/addProduct`
     fetch(url,{
       method : 'POST',
       headers : {'Content-Type' : 'application/json'},

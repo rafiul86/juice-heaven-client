@@ -11,7 +11,7 @@ const Orders = () => {
     const {id}= useParams()
     const [item, setItem] = useState({})
     useEffect(()=>{
-        fetch(`http://localhost:5501/findProduct/`+id)
+        fetch(`https://peaceful-crag-13613.herokuapp.com/findProduct/`+id)
         .then(res => res.json())
         .then(data =>setItem(data))
     },[id])
@@ -23,7 +23,7 @@ const Orders = () => {
             product : item.name,
             price : item.price,
         }
-        fetch('http://localhost:5501/orderDetails',{
+        fetch('https://peaceful-crag-13613.herokuapp.com/orderDetails',{
             method : 'POST',
             headers : {'Content-Type' : 'application/json'},
             body : JSON.stringify(orderDetails)
