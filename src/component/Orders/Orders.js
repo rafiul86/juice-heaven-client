@@ -3,17 +3,15 @@ import { useParams } from 'react-router';
 
 const Orders = () => {
     const {id}= useParams()
-    console.log(id)
     const [item, setItem] = useState({})
     useEffect(()=>{
-        fetch(`http://localhost:5501/findProduct/${id}`)
+        fetch(`http://localhost:5501/findProduct/`+id)
         .then(res => res.json())
         .then(data =>setItem(data))
-        console.log(item)
     },[])
     return (
         <div>
-            <h1>orders{item.name} </h1>
+            <h4>Name : {item.name}  <span> Price : {item.price}</span> </h4>   
         </div>
     );
 };

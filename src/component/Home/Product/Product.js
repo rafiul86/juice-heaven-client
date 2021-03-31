@@ -8,7 +8,8 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
-
+import { IconButton } from '@material-ui/core';
+import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
 
 
 const useStyles = makeStyles({
@@ -16,14 +17,15 @@ const useStyles = makeStyles({
       maxWidth: 345,
     },
     media: {
-      height: 140,
+      height: 300,
     },
+    color : {
+      primary : 'red'
+    }
   });
 const Product = ({product}) => {
     const {name, _id , price, imageURL} = product;
     const classes = useStyles();
-
-   
     return (
         <div>
             <Card className={classes.root}>
@@ -31,7 +33,6 @@ const Product = ({product}) => {
         <CardMedia
           className={classes.media}
           image={imageURL}
-          title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
@@ -40,11 +41,12 @@ const Product = ({product}) => {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Typography gutterBottom variant="h5" component="h2">
-      {price}
-          </Typography>
-        <Button size="small" variant="contained"  color="primary">
-        <Link to="/orders/:id">Order Now</Link>
+      <Button size="medium" variant="contained" color="primary">Price</Button>
+      <IconButton aria-label="price">
+      <AttachMoneyIcon />{price} 
+        </IconButton>
+        <Button size="small" variant="contained" color="inherit">
+        <Link to={`/orders/${_id}`}>Order Now</Link>
         </Button>
       </CardActions>
     </Card>
