@@ -14,7 +14,7 @@ const Home = () => {
         <div>
          <Grid container spacing={8} >
                {
-                    products.map(product=><Grid item X={12} md={6} lg={4} xlg={3}><Product product={product}></Product></Grid>)
+                    products.map(product=><Grid item X={12} md={6} lg={4} xlg={3}><Product key={product._id} product={product}></Product></Grid>)
               }    
         </Grid> 
         </div>

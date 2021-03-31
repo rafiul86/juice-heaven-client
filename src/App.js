@@ -7,6 +7,7 @@ import Login from "./component/Login/Login";
 import Orders from "./component/Orders/Orders";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import { Container } from '@material-ui/core';
+import Shipment from "./component/Shipment/Shipment";
 
       export  const UserContext = createContext()
 
@@ -26,7 +27,7 @@ function App() {
               <Link to="/home">Home</Link>
             </li>
             <li>
-              <Link to="/orders">Orders</Link>
+              <Link to="/shipment">Orders</Link>
             </li>
             <li>
               <Link to="/admin">Admin</Link>
@@ -46,11 +47,14 @@ function App() {
           <PrivateRoute path="/admin">
             <Admin />
           </PrivateRoute>
+          <PrivateRoute path="/shipment">
+          <Shipment />
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/">
-            <Home />
+          <Home />
           </Route>
         </Switch>
       </div>
