@@ -20,8 +20,10 @@ const useStyles = makeStyles({
     },
   });
 const Product = ({product}) => {
-    const {name , price, imageURL} = product;
+    const {name, _id , price, imageURL} = product;
     const classes = useStyles();
+
+   
     return (
         <div>
             <Card className={classes.root}>
@@ -41,8 +43,8 @@ const Product = ({product}) => {
       <Typography gutterBottom variant="h5" component="h2">
       {price}
           </Typography>
-        <Button size="small" variant="contained" color="primary">
-        <Link to="/orders">Order Now</Link>
+        <Button size="small" variant="contained"  color="primary">
+        <Link to="/orders/:id">Order Now</Link>
         </Button>
       </CardActions>
     </Card>
