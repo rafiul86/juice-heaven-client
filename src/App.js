@@ -6,13 +6,16 @@ import Home from "./component/Home/Home";
 import Login from "./component/Login/Login";
 import Orders from "./component/Orders/Orders";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
+import { Container } from '@material-ui/core';
 
       export  const UserContext = createContext()
 
 function App() {
       const [loggedInUser ,setLoggedInUser] = useState({})
   return (
+
     <UserContext.Provider value = {[loggedInUser ,setLoggedInUser]}>
+      <Container>
       <h1>{loggedInUser.displayName}</h1>
       <img src={loggedInUser.photoURL} alt=""/>
       <Router>
@@ -52,6 +55,7 @@ function App() {
         </Switch>
       </div>
     </Router>
+    </Container>
     </UserContext.Provider>
   );
 }

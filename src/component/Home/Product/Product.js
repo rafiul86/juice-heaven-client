@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 
 
@@ -18,7 +19,8 @@ const useStyles = makeStyles({
       height: 140,
     },
   });
-const Product = () => {
+const Product = ({product}) => {
+    const {name , price, imageURL} = product;
     const classes = useStyles();
     return (
         <div>
@@ -26,25 +28,21 @@ const Product = () => {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image="/static/images/cards/contemplative-reptile.jpg"
+          image={imageURL}
           title="Contemplative Reptile"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Lizard
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            {name}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
+      <Typography gutterBottom variant="h5" component="h2">
+      {price}
+          </Typography>
+        <Button size="small" variant="contained" color="primary">
+        <Link to="/orders">Order Now</Link>
         </Button>
       </CardActions>
     </Card>
