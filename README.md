@@ -1,71 +1,24 @@
-# Getting Started with Create React App
+## Now a days delivery service is getting popularity in urban people specially for the inhabitant of mega city.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80](https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
 
-## Available Scripts
+### This website is  here to ease  the entrepreneurship to start  fresh juice delivery business make easily manageable.
+*Key Features of the Web Application*
 
-In the project directory, you can run:
+1. Choose your juice made of several indigenous fruits .
+2. compare the price with others.
+3. Track order by client.
+4. Google authenticated security system.
 
-### `npm start`
+__Beside this you may find it better in many other ways__
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+This is the website [https://hill-view-mart-client.web.app/](https://hill-view-mart-client.web.app/) to view it in the browser.
 
-### `npm test`
+> Developer option : use this to make functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# full-stack-client-rafiul86
+```javascript
+function myFunc(a,b){
+    return a + b ;
+}
+```
