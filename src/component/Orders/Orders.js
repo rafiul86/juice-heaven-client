@@ -30,7 +30,7 @@ const Orders = () => {
         })
         .then(res => res.json())
         .then(data => {
-        console.log('order submitted')
+        alert('Order submitted successfully')
         })
     }
     return (

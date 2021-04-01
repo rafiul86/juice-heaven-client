@@ -8,6 +8,7 @@ import Orders from "./component/Orders/Orders";
 import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import { Container } from '@material-ui/core';
 import Shipment from "./component/Shipment/Shipment";
+import AddProducts from "./component/Admin/AddProducts/AddProducts";
 
       export  const UserContext = createContext()
 
@@ -17,8 +18,8 @@ function App() {
 
     <UserContext.Provider value = {[loggedInUser ,setLoggedInUser]}>
       <Container>
-      <h1>{loggedInUser.displayName}</h1>
-      <img src={loggedInUser.photoURL} alt=""/>
+      {/* <h1>{loggedInUser.displayName}</h1>
+      <img src={loggedInUser.photoURL} alt=""/> */}
       <Router>
       <div>
         <nav>
@@ -53,8 +54,11 @@ function App() {
           <PrivateRoute path="/orders/:id">
             <Orders />
           </PrivateRoute>
+          <PrivateRoute path="/addproducts">
+            <AddProducts />
+          </PrivateRoute>
           <Route path="/">
-          <Home />
+            <Home />
           </Route>
         </Switch>
       </div>
