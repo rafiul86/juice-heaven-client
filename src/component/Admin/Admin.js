@@ -7,6 +7,8 @@ const Admin = () => {
     return (
         <div>
           <Link to="/addproducts">Add Products</Link>
+          <br/>
+          <Link to="/deleteproducts">Manage Products</Link>
         </div>
     );
 };

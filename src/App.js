@@ -9,6 +9,10 @@ import PrivateRoute from "./component/PrivateRoute/PrivateRoute";
 import { Container } from '@material-ui/core';
 import Shipment from "./component/Shipment/Shipment";
 import AddProducts from "./component/Admin/AddProducts/AddProducts";
+import DeleteProducts from "./component/DeleteProducts/DeleteProducts";
+
+
+
 
       export  const UserContext = createContext()
 
@@ -56,6 +60,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/addproducts">
             <AddProducts />
+          </PrivateRoute>
+          <PrivateRoute path="/deleteproducts">
+            <DeleteProducts />
           </PrivateRoute>
           <Route path="/">
             <Home />
