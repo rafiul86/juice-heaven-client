@@ -2,7 +2,7 @@ import { Button } from '@material-ui/core';
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../App';
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
-import { DeleteOutline } from '@material-ui/icons';
+import { DeleteOutline, PausePresentationRounded } from '@material-ui/icons';
 const DeleteProducts = () => {
     const [orders , setOrders] = useState([]);
     const [loggedInUser ,setLoggedInUser] = useContext(UserContext)
@@ -12,13 +12,14 @@ const DeleteProducts = () => {
         .then(data => setOrders(data))
     },[])
     const handleDelete = (id)=>{
-        console.log(id)
         fetch(`https://peaceful-crag-13613.herokuapp.com/deleteProduct/${id}`,{
             method : "DELETE"
         })
         .then(res=>res.json())
-        .then(data =>{
-            console.log("one item deleted")
+        .then(result =>{
+            if(result){
+               alert('One item deleted')
+            }
         })
     }
     return (

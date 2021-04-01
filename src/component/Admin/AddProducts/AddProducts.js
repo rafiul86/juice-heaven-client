@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 
 const AddProducts = () => {
+    
     const { register, handleSubmit } = useForm();
     const [imageURL ,setImageURL] = useState(null)
   const onSubmit = data => {
@@ -18,7 +19,7 @@ const AddProducts = () => {
       body : JSON.stringify(productData)
     })
     .then(res =>{
-      console.log('product uploaded to server')
+      alert('One item added')
     })
   }
  const  handleImageUpload = (event) =>{
