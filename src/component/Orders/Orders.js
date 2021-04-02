@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -35,10 +35,13 @@ const Orders = () => {
     }
     return (
         <div>
+            <Grid container spacing={8}>
+            <Grid item xs={12} lg={6}>
          <img style={{width : '300px' , borderRadius : '60px'}} src={item.imageURL} alt=""/>
             <h4>Name : {item.name}  <span> Price : {item.price}</span> </h4>  
             <Button variant="contained" color="primary" onClick={handleOrder}><Link to="/shipment">Checkout</Link></Button> 
-            
+            </Grid>
+            </Grid>
         </div>
     );
 };
