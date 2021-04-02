@@ -2,14 +2,16 @@ import axios from 'axios';
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import { Link } from 'react-router-dom';
+import { Button ,Container} from '@material-ui/core';
 
 const Admin = () => {
     return (
-        <div>
-          <Link to="/addproducts">Add Products</Link>
+        
+        <Container>
+          <Button className="position" color="primary" variant="contained"><Link to="/addproducts">Add Products</Link></Button>
           <br/>
-          <Link to="/deleteproducts">Manage Products</Link>
-        </div>
+          <Button className="position" color="secondary" variant="contained"><Link to="/deleteproducts">Manage Products</Link></Button>
+        </Container>
     );
 };
 
