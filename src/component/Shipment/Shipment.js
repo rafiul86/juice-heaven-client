@@ -1,5 +1,7 @@
+
 import React, { useContext, useEffect, useState } from 'react';
 import { UserContext } from '../../App';
+import TableData from './Table/TableData';
 
 const Shipment = () => {
     const [orders , setOrders] = useState([]);
@@ -12,7 +14,8 @@ const Shipment = () => {
     return (
         <div>
             {
-                orders.map(order => <li>{order.email}  {order.date}  {order.product}  {order.names} </li>)
+                orders.map(order => <TableData order={order}> </TableData>)
+                
             }
         </div>
     );
