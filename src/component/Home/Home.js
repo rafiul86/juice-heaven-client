@@ -15,8 +15,8 @@ const Home = (props) => {
         .then(data =>setProducts(data))
     },[])
     return (
-        <div>
-            <Box  justifyContent="center" display="flex" p={1} bgcolor="background.paper">
+        <div >
+            <Box display="flex" p={1} bgcolor="background.paper">
             {
                 products.length===0 && <CircularProgress alignItems="center" />
             }

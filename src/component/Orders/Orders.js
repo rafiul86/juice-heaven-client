@@ -37,8 +37,8 @@ const Orders = () => {
         history.push('/shipment')
     }
     return (
-        <div>
-            <Grid container spacing={8}>
+        <div className="shadow-lgtv">
+            <Grid spacing={8}>
             <Grid item xs={12} lg={6}>
          <img style={{width : '300px' , borderRadius : '60px'}} src={item.imageURL} alt=""/>
             <h4>Name : {item.name}  <span> Price : {item.price}</span> </h4>  

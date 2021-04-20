@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { Link } from 'react-router-dom';
 import { IconButton } from '@material-ui/core';
 import AttachMoneyIcon from '@material-ui/icons/AttachMoney';
-
+import './Product.css'
 
 const useStyles = makeStyles({
     root: {
@@ -27,7 +27,7 @@ const Product = ({product}) => {
     const {name, _id , price, imageURL} = product;
     const classes = useStyles();
     return (
-        <div>
+        <div className="shadow-lgtv">
             <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
