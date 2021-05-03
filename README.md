@@ -1,6 +1,6 @@
 ## Now a days delivery service is getting popularity in urban people specially for the inhabitant of mega city.
 
-![https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80](https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
+
 
 ### This website is  here to ease  the entrepreneurship to start  fresh juice delivery business make easily manageable.
 *Key Features of the Web Application*
@@ -17,8 +17,13 @@ This is the website [https://hill-view-mart-client.web.app/](https://hill-view-m
 
 > Developer option : use this to make functionality
 
-```javascript
-function myFunc(a,b){
-    return a + b ;
-}
+```
+
+
+
+![https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80](https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8anVpY2V8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&w=1000&q=80)
+
+
+
+
 ```
